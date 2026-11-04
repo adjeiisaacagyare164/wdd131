@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall page layout */
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 120px 60px 1fr 120px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Main section */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    min-height: 350px;
+}
+
+.content {
+    background-color: #cfcfcf;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+aside {
+    background-color: #eeeeee;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
