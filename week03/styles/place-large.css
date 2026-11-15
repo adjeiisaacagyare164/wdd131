@@ -50,4 +50,8 @@
     .weather h2::after {
         content: " ⛅";
     }
+
+    .data h2::after {
+        content: "📊";
+    }
 }
