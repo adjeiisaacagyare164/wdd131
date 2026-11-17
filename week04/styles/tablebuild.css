@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 5%;
+}
+
+table {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+caption {
+    caption-side: bottom;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    padding: 0.75rem, 1rem;
+    text-align: center;
+    white-space: pre;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+thead th,
+thead td {
+    text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+/* Zebra Striping */
+tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+w tbody tr:nth-last-child(1) {
+    background-color: #333;
+    color: white;
+}
+
+.blank {
+    color: #f3f3f3;
+    background-color: #000;
+}
