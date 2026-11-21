@@ -91,9 +91,16 @@ const temples = [
         area: 41010,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg"
+    },
+
+    {
+        templeName: "Salt Lake Utah",
+        location: "Salt Lake City, Utah, United States",
+        dedicated: "1893, April, 6",
+        area: 253000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-75244-main.jpg"
     }
-
-
 
 ];
 
