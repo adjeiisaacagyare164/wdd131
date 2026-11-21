@@ -40,7 +40,7 @@ tbody tr:nth-child(even) {
     background-color: #f3f3f3;
 }
 
-w tbody tr:nth-last-child(1) {
+tbody tr:nth-last-child(1) {
     background-color: #333;
     color: white;
 }

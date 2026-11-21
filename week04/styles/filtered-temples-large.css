@@ -1,0 +1,31 @@
+@media screen and (min-width: 768px) {
+
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 2rem;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure img {
+        max-width: 300px;
+    }
+}
