@@ -27,7 +27,6 @@ This project serves as a student portfolio and learning workspace for the course
 - `styles/` — CSS files for layout and design
 - `scripts/` — JavaScript files for page behavior
 - `images/` — profile and media assets
-- `week01/` and `week02/` — weekly assignments and exercises
 
 ## Learning Goals
 
