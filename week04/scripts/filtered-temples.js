@@ -1,17 +1,3 @@
-// const hamButton = document.querySelector('#menu');
-// const navigation = document.querySelector('.navigation');
-
-// hamButton.addEventListener('click', () => {
-//     navigation.classList.toggle('open');
-//     hamButton.classList.toggle('open');
-// });
-
-// document.querySelector('#currentyear').textContent =
-//     new Date().getFullYear();
-
-// document.querySelector('#lastModified').textContent =
-//     `Last Modified: ${document.lastModified}`;
-
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -104,16 +90,20 @@ const temples = [
 
 ];
 
+
+
+
 const gallery = document.querySelector('.gallery');
 const pageTitle = document.querySelector('#page-title');
 
-function displayTemples(temples) {
+function displayTemples(filteredTemples) {
 
     gallery.innerHTML = '';
 
-    temples.forEach(temple => {
+    filteredTemples.forEach((temple) => {
 
         const card = document.createElement('section');
+
         const name = document.createElement('h3');
         const location = document.createElement('p');
         const dedicated = document.createElement('p');
@@ -128,6 +118,11 @@ function displayTemples(temples) {
         image.src = temple.imageUrl;
         image.alt = temple.templeName;
         image.loading = "lazy";
+        image.width = 400;
+        image.height = 250;
+
+        image.setAttribute("width", "400");
+        image.setAttribute("height", "250");
 
         card.append(
             name,
@@ -137,19 +132,24 @@ function displayTemples(temples) {
             image
         );
 
-        gallery.append(card);
+        gallery.appendChild(card);
     });
 }
 
 displayTemples(temples);
 
-document.querySelector('#home').addEventListener('click', () => {
+document.querySelector('#home').addEventListener('click', (e) => {
+    e.preventDefault();
+
     pageTitle.textContent = 'Home';
     displayTemples(temples);
 });
 
-document.querySelector('#old').addEventListener('click', () => {
+document.querySelector('#old').addEventListener('click', (e) => {
+    e.preventDefault();
+
     pageTitle.textContent = 'Old';
+
     displayTemples(
         temples.filter(
             temple => parseInt(temple.dedicated) < 1900
@@ -157,8 +157,11 @@ document.querySelector('#old').addEventListener('click', () => {
     );
 });
 
-document.querySelector('#new').addEventListener('click', () => {
+document.querySelector('#new').addEventListener('click', (e) => {
+    e.preventDefault();
+
     pageTitle.textContent = 'New';
+
     displayTemples(
         temples.filter(
             temple => parseInt(temple.dedicated) > 2000
@@ -166,8 +169,11 @@ document.querySelector('#new').addEventListener('click', () => {
     );
 });
 
-document.querySelector('#large').addEventListener('click', () => {
+document.querySelector('#large').addEventListener('click', (e) => {
+    e.preventDefault();
+
     pageTitle.textContent = 'Large';
+
     displayTemples(
         temples.filter(
             temple => temple.area > 90000
@@ -175,14 +181,19 @@ document.querySelector('#large').addEventListener('click', () => {
     );
 });
 
-document.querySelector('#small').addEventListener('click', () => {
+document.querySelector('#small').addEventListener('click', (e) => {
+    e.preventDefault();
+
     pageTitle.textContent = 'Small';
+
     displayTemples(
         temples.filter(
             temple => temple.area < 10000
         )
     );
 });
+
+/* Hamburger Menu */
 
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
@@ -192,10 +203,10 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+/* Footer */
+
 document.querySelector('#currentyear').textContent =
     new Date().getFullYear();
 
 document.querySelector('#lastModified').textContent =
     `Last Modified: ${document.lastModified}`;
-
-

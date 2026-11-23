@@ -11,9 +11,15 @@
         padding: 1rem 2rem;
     }
 
+    header h1 {
+        text-align: left;
+    }
+
     nav {
+        display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
         gap: 2rem;
     }
 
@@ -23,9 +29,15 @@
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
     }
 
-    figure img {
-        max-width: 300px;
+    .gallery section {
+        height: 100%;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        height: auto;
     }
 }
