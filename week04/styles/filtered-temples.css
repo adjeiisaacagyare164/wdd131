@@ -103,6 +103,7 @@ main h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
+
 .gallery section {
     border: 1px solid #ccc;
     padding: 1rem;
@@ -119,14 +120,6 @@ main h2 {
     margin-bottom: 0.5rem;
 }
 
-.gallery img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
 
 /* Footer */
 

@@ -2,7 +2,7 @@
     --primary-color: #0A66C2;
     --secondary-color: #F4F6F8;
     --accent-color: #28A745;
-    --t: #f3f31ef5;
+    --text-color: #1F2937;
 }
 
 * {
@@ -82,6 +82,12 @@ ul {
     background-color: var(--accent-color);
     color: white;
 }
+
+.text {
+    background-color: var(--text-color);
+    color: white;
+}
+
 
 .wireframe {
     border: 2px solid #ccc;
